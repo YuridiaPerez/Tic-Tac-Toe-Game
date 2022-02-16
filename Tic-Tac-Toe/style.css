@@ -1,0 +1,72 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fondo: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80');
+    --fuente-titulo: 'Roboto', sans-serif;
+    --size-titulo:100px;
+    --color-titulo:  #c02f75 ;
+    --fuente-texto: 'Raleway', sans-serif;
+    --size-texto: 16px;
+    --color-texto: #5c1231 ;
+    --color-status: #a51953;
+    --color-boton: #26a45f ;
+    --borde: #11aade ;
+}
+
+body {
+    background-image: var(--fondo);
+}
+
+section {
+    text-align: center;
+}
+
+.game--title {
+    color: var(--color-titulo);
+    font-size: var(--size-titulo);
+    margin: 10px auto;
+    font-family: var(--fuente-titulo);
+}
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 10px auto;
+    background-color: #11213a;
+    color: #04c0b2;
+}
+
+.cell {
+    font-family: var(--fuente-texto);
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 2px 2px 2px #34ccbf;
+    border: 2px solid var(--borde);
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+.game--status {
+    font-size: 50px;
+    color: var(--color-status);
+    margin: 20px auto;
+}
+
+.game--restart {
+    background-color:var(--color-boton);
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    color: var(--color-texto);
+}
+
+.game--restart:hover{
+    background-color: var(--color-texto);
+    color: var(--color-boton);
+}
